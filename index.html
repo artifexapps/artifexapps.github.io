@@ -1,1 +1,109 @@
-artifexapps apps
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Artifex Apps</title>
+<meta name="description" content="Artifex Apps — mobile apps and games built with care. Makers of Know Your Fretboard.">
+<style>
+  :root {
+    --bg: #faf7f2;
+    --surface: #ffffff;
+    --text: #2a2420;
+    --muted: #6b625a;
+    --accent: #a8742a;
+    --accent-dark: #7d5519;
+    --border: #e8e0d4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1614;
+      --surface: #241f1c;
+      --text: #f1ebe3;
+      --muted: #b0a59a;
+      --accent: #d4a050;
+      --accent-dark: #e8b868;
+      --border: #3a332e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+  header { padding: 72px 0 40px; border-bottom: 1px solid var(--border); }
+  .brand { font-size: 2.6rem; letter-spacing: 0.02em; margin: 0; }
+  .brand span { color: var(--accent); }
+  .tagline { color: var(--muted); font-style: italic; margin: 8px 0 0; }
+  main { padding: 48px 0; }
+  h2 {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--muted); margin: 0 0 20px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+  }
+  .card h3 { margin: 0 0 8px; font-size: 1.5rem; }
+  .card p { margin: 0 0 20px; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--muted); }
+  .btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 8px;
+  }
+  .btn:hover { background: var(--accent-dark); }
+  .about { margin-top: 48px; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--muted); }
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 28px 0 48px;
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size: 0.9rem; color: var(--muted);
+  }
+  footer a { color: var(--accent); }
+  footer nav a { margin-right: 18px; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1 class="brand">Artifex <span>Apps</span></h1>
+      <p class="tagline">artifex (Latin): maker, craftsman — one who builds with skill.</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <h2>Our apps</h2>
+      <div class="card">
+        <h3>Know Your Fretboard</h3>
+        <p>Learn every note on the guitar neck through quick, game-style challenges on an interactive fretboard. Earn achievements and climb the leaderboards with Google Play Games.</p>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.artifexapps.knowyourfretboard">Get it on Google Play</a>
+      </div>
+
+      <p class="about">Artifex Apps is an independent developer from Argentina creating focused, well-crafted mobile apps and games.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <nav>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </nav>
+      <p>Contact: <a href="mailto:artifex.dev.apps@gmail.com">artifex.dev.apps@gmail.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
